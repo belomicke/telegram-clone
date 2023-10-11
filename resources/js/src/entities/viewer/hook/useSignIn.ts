@@ -1,5 +1,5 @@
-import SignInDto from '@/shared/types/Viewer/DTO/SignInDto'
-import { viewerApi } from '@/Entities/Viewer/api'
+import { SignInDto } from '@/shared/types/Viewer/DTO/SignInDto'
+import { viewerApi } from '@/entities/viewer/api'
 
 export const useSignIn = () => {
     const mutate = async (dto: SignInDto) => {
@@ -8,7 +8,7 @@ export const useSignIn = () => {
 
         if (data.success) {
             localStorage.setItem('token', data.token)
-            console.log(data.token)
+            window.location.reload()
         }
     }
 

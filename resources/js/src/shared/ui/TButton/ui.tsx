@@ -1,10 +1,11 @@
 import React, { ButtonHTMLAttributes } from 'react'
-import styles from './styles.module.scss'
+import { Button } from './styles'
 
 interface props extends ButtonHTMLAttributes<HTMLButtonElement> {
     text: string
+    variant?: 'primary'
 }
 
-export const AuthFormSubmitButton = ({ text, ...props }: props) => (
-    <button className={styles.button} {...props}>{text}</button>
+export const TButton = ({ text, variant = 'primary', ...props }: props) => (
+    <Button variant={variant} {...props}>{text}</Button>
 )

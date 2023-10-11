@@ -1,1 +1,1 @@
-export { AuthFormSubmitButton } from './ui'
+export { TButton } from './ui'

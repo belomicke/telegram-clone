@@ -1,3 +1,3 @@
 import { AxiosResponse } from 'axios'
 
-export type SingInResponse = AxiosResponse<{ success: true, token: string }>
+export type SignInResponse = AxiosResponse<{ success: true, token: string }>

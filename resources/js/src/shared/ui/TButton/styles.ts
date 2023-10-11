@@ -1,8 +1,10 @@
-.button {
-    outline: none !important;
+import styled from 'styled-components'
+
+export const Button = styled.button<{ variant: 'primary' }>`
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: none !important;
     width: 100%;
     height: 3.5rem;
     border: 0;
@@ -18,13 +20,12 @@
     transition: background-color .15s,color .15s;
     text-decoration: none !important;
 
-    background: var(--color-primary);
-    color: #ffffff;
-    --ripple-color: rgba(0, 0, 0, 0.08);
+    ${props => props.variant === 'primary' && `
+        background: var(--color-primary);
+        color: #ffffff;
 
-    margin-top: 2.75rem;
-
-    &:hover {
-        background-color: var(--color-primary-shade);
-    }
-}
+        &:hover {
+            background-color: var(--color-primary-shade);
+        }
+    `}
+`

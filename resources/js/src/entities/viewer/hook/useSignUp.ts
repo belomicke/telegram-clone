@@ -1,5 +1,5 @@
-import SignUpDto from '@/shared/types/Viewer/DTO/SignUpDto'
-import { viewerApi } from '@/Entities/Viewer/api'
+import { SignUpDto } from '@/shared/types/Viewer/DTO/SignUpDto'
+import { viewerApi } from '@/entities/viewer/api'
 
 export const useSignUp = () => {
     const mutate = async (dto: SignUpDto) => {

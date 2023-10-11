@@ -3,19 +3,25 @@ import { immer } from 'zustand/middleware/immer'
 import Viewer from '@/shared/types/Viewer/Viewer'
 
 interface State {
-    user: Viewer | undefined
+    viewer: Viewer | undefined
 }
 
 interface Actions {
-    setUser: (data: Viewer) => void
+    setViewer: (data: Viewer) => void
+    deleteViewer: () => void
 }
 
 export const useViewerStore = create(
     immer<State & Actions>((set) => ({
-        user: undefined,
-        setUser: (data: Viewer) => {
+        viewer: undefined,
+        setViewer: (data: Viewer) => {
             set((state) => {
-                state.user = data
+                state.viewer = data
+            })
+        },
+        deleteViewer: () => {
+            set((state) => {
+                state.viewer = undefined
             })
         }
     }))
