@@ -1208,6 +1208,7 @@
 
 "@remix-run/router@1.9.0":
   version "1.9.0"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/@remix-run/router/-/router-1.9.0.tgz"
   integrity sha512-bV63itrKBC0zdT27qYm6SDZHlkXwFL1xMBuhkn+X7l0+IIhNaH5wuuvZKp6eKhCD4KFhujhfhCT1YxXW6esUIA==
 
@@ -1223,6 +1224,11 @@
   resolved "https://registry.npmjs.org/@tanstack/virtual-core/-/virtual-core-3.0.0-beta.68.tgz"
   integrity sha512-CnvsEJWK7cugigckt13AeY80FMzH+OMdEP0j0bS3/zjs44NiRe49x8FZC6R9suRXGMVMXtUHet0zbTp/Ec9Wfg==
 
+=======
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.9.0.tgz#9033238b41c4cbe1e961eccb3f79e2c588328cf6"
+  integrity sha512-bV63itrKBC0zdT27qYm6SDZHlkXwFL1xMBuhkn+X7l0+IIhNaH5wuuvZKp6eKhCD4KFhujhfhCT1YxXW6esUIA==
+
+>>>>>>> 75ed37e (добавил настройки eslint и tsconfig)
 "@types/babel__core@^7.20.2":
   version "7.20.2"
   resolved "https://registry.npmjs.org/@types/babel__core/-/babel__core-7.20.2.tgz"
@@ -1258,7 +1264,11 @@
 
 "@types/history@^4.7.11":
   version "4.7.11"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/@types/history/-/history-4.7.11.tgz"
+=======
+  resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.11.tgz#56588b17ae8f50c53983a524fc3cc47437969d64"
+>>>>>>> 75ed37e (добавил настройки eslint и tsconfig)
   integrity sha512-qjDJRrmvBMiTx+jyLxvLfJU7UznFuokDv4f3WRuriHKERccVpFU+8XMQUAbDzoiJCsmexxRExQeMwwCdamSKDA==
 
 "@types/json-schema@^7.0.12":
@@ -1300,7 +1310,11 @@
 
 "@types/react-router-dom@^5.3.3":
   version "5.3.3"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-5.3.3.tgz"
+=======
+  resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-5.3.3.tgz#e9d6b4a66fcdbd651a5f106c2656a30088cc1e83"
+>>>>>>> 75ed37e (добавил настройки eslint и tsconfig)
   integrity sha512-kpqnYK4wcdm5UaWI3fLcELopqLrHgLqNsdpHauzlQktfkHL3npOSwtj1Uz9oKBAzs7lFtVkV8j83voAz2D8fhw==
   dependencies:
     "@types/history" "^4.7.11"
@@ -1309,13 +1323,21 @@
 
 "@types/react-router@*":
   version "5.1.20"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/@types/react-router/-/react-router-5.1.20.tgz"
+=======
+  resolved "https://registry.yarnpkg.com/@types/react-router/-/react-router-5.1.20.tgz#88eccaa122a82405ef3efbcaaa5dcdd9f021387c"
+>>>>>>> 75ed37e (добавил настройки eslint и tsconfig)
   integrity sha512-jGjmu/ZqS7FjSH6owMcD5qpq19+1RS9DeVRqfl1FeBMxTDQAGwlMWOcs52NDoXaNKyG3d1cYQFMs9rCrb88o9Q==
   dependencies:
     "@types/history" "^4.7.11"
     "@types/react" "*"
 
+<<<<<<< HEAD
 "@types/react@*", "@types/react@^18.2.25", "@types/react@>=16.8":
+=======
+"@types/react@*", "@types/react@^18.2.25":
+>>>>>>> 75ed37e (добавил настройки eslint и tsconfig)
   version "18.2.25"
   resolved "https://registry.npmjs.org/@types/react/-/react-18.2.25.tgz"
   integrity sha512-24xqse6+VByVLIr+xWaQ9muX1B4bXJKXBbjszbld/UEDslGLY53+ZucF44HCmLbMPejTzGG9XgR+3m2/Wqu1kw==
@@ -1356,7 +1378,11 @@
     semver "^7.5.4"
     ts-api-utils "^1.0.1"
 
+<<<<<<< HEAD
 "@typescript-eslint/parser@^6.0.0 || ^6.0.0-alpha", "@typescript-eslint/parser@^6.4.0", "@typescript-eslint/parser@^6.4.1":
+=======
+"@typescript-eslint/parser@^6.4.0", "@typescript-eslint/parser@^6.4.1":
+>>>>>>> 75ed37e (добавил настройки eslint и tsconfig)
   version "6.7.4"
   resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-6.7.4.tgz"
   integrity sha512-I5zVZFY+cw4IMZUeNCU7Sh2PO5O57F7Lr0uyhgCJmhN/BuTlnc55KxPonR4+EM3GBdfiCyGZye6DgMjtubQkmA==
@@ -2420,7 +2446,11 @@ globby@^11.1.0:
 
 globrex@^0.1.2:
   version "0.1.2"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/globrex/-/globrex-0.1.2.tgz"
+=======
+  resolved "https://registry.yarnpkg.com/globrex/-/globrex-0.1.2.tgz#dd5d9ec826232730cd6793a5e33a9302985e6098"
+>>>>>>> 75ed37e (добавил настройки eslint и tsconfig)
   integrity sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==
 
 gopd@^1.0.1:
@@ -3180,7 +3210,11 @@ react-refresh@^0.14.0:
 
 react-router-dom@^6.16.0:
   version "6.16.0"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.16.0.tgz"
+=======
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.16.0.tgz#86f24658da35eb66727e75ecbb1a029e33ee39d9"
+>>>>>>> 75ed37e (добавил настройки eslint и tsconfig)
   integrity sha512-aTfBLv3mk/gaKLxgRDUPbPw+s4Y/O+ma3rEN1u8EgEpLpPe6gNjIsWt9rxushMHHMb7mSwxRGdGlGdvmFsyPIg==
   dependencies:
     "@remix-run/router" "1.9.0"
@@ -3188,11 +3222,16 @@ react-router-dom@^6.16.0:
 
 react-router@6.16.0:
   version "6.16.0"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/react-router/-/react-router-6.16.0.tgz"
+=======
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.16.0.tgz#abbf3d5bdc9c108c9b822a18be10ee004096fb81"
+>>>>>>> 75ed37e (добавил настройки eslint и tsconfig)
   integrity sha512-VT4Mmc4jj5YyjpOi5jOf0I+TYzGpvzERy4ckNSvSh2RArv8LLoCxlsZ2D+tc7zgjxcY34oTz2hZaeX5RVprKqA==
   dependencies:
     "@remix-run/router" "1.9.0"
 
+<<<<<<< HEAD
 react-virtualized@^9.22.5:
   version "9.22.5"
   resolved "https://registry.npmjs.org/react-virtualized/-/react-virtualized-9.22.5.tgz"
@@ -3206,6 +3245,9 @@ react-virtualized@^9.22.5:
     react-lifecycles-compat "^3.0.4"
 
 "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.3.0 || ^16.0.0-alpha || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", react@^18.2.0, "react@>= 16.8.0", react@>=16.8:
+=======
+react@^18.2.0:
+>>>>>>> 75ed37e (добавил настройки eslint и tsconfig)
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
@@ -3590,7 +3632,11 @@ ts-api-utils@^1.0.1:
 
 tsconfck@^2.1.0:
   version "2.1.2"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/tsconfck/-/tsconfck-2.1.2.tgz"
+=======
+  resolved "https://registry.yarnpkg.com/tsconfck/-/tsconfck-2.1.2.tgz#f667035874fa41d908c1fe4d765345fcb1df6e35"
+>>>>>>> 75ed37e (добавил настройки eslint и tsconfig)
   integrity sha512-ghqN1b0puy3MhhviwO2kGF8SeMDNhEbnKxjK7h6+fvY9JAxqvXi8y5NAHSQv687OVboS2uZIByzGd45/YxrRHg==
 
 tsconfig-paths@^3.14.2:
@@ -3742,14 +3788,22 @@ vite-plugin-full-reload@^1.0.5:
 
 vite-tsconfig-paths@^4.2.0:
   version "4.2.1"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/vite-tsconfig-paths/-/vite-tsconfig-paths-4.2.1.tgz"
+=======
+  resolved "https://registry.yarnpkg.com/vite-tsconfig-paths/-/vite-tsconfig-paths-4.2.1.tgz#e53b89096b91d31a6d1e26f75999ea8c336a89ed"
+>>>>>>> 75ed37e (добавил настройки eslint и tsconfig)
   integrity sha512-GNUI6ZgPqT3oervkvzU+qtys83+75N/OuDaQl7HmOqFTb0pjZsuARrRipsyJhJ3enqV8beI1xhGbToR4o78nSQ==
   dependencies:
     debug "^4.1.1"
     globrex "^0.1.2"
     tsconfck "^2.1.0"
 
+<<<<<<< HEAD
 vite@*, "vite@^2 || ^3 || ^4", "vite@^3.0.0 || ^4.0.0", vite@^4.0.0, vite@^4.2.0:
+=======
+vite@^4.0.0:
+>>>>>>> 75ed37e (добавил настройки eslint и tsconfig)
   version "4.4.11"
   resolved "https://registry.npmjs.org/vite/-/vite-4.4.11.tgz"
   integrity sha512-ksNZJlkcU9b0lBwAGZGGaZHCMqHsc8OpgtoYhsQ4/I2v5cnpmmmqe5pM4nv/4Hn6G/2GhTdj0DhZh2e+Er1q5A==
