@@ -21,7 +21,7 @@ export const Container = styled.div`
 export const Input = styled.input<{ focused: boolean }>`
     color: var(--color-text);
     background-color: var(--color-background);
-    width: calc(100% - 56px);
+    width: 100%;
     border: 0;
     outline: 0;
     font-size: 16px;
@@ -64,7 +64,6 @@ export const Placeholder = styled.span<{ text_length: number }>`
 `
 
 export const SendButton = styled.button<{ text_length: number, focused: boolean }>`
-    outline: none !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,21 +74,26 @@ export const SendButton = styled.button<{ text_length: number, focused: boolean 
     color: #fff;
     padding: 0;
     line-height: 1.2;
-    cursor: pointer;
+    outline: none !important;
+    position: absolute;
+    right: 0;
+
     transition: background-color .15s, opacity 200ms ease-out, transform 200ms ease-out, border-radius .15s;
 
     ${props => props.focused && `
+        cursor: pointer;
         border-radius: 50%;
+
+        &:hover {
+            background-color: var(--color-primary);
+            color: #fff;
+
+            & > i {
+                color: #fff;
+            }
+        }
     `};
 
-    &:hover {
-        background-color: var(--color-primary);
-        color: #fff;
-
-        & > i {
-            color: #fff;
-        }
-    }
 
     & > i {
         font-size: 1.5rem;
