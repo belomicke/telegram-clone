@@ -1,0 +1,1 @@
+export { TAvatar } from './ui'

@@ -1,0 +1,915 @@
+@font-face {
+    font-family: "icons";
+    src: url('http://localhost/icons.woff2') format("woff2"), url('http://localhost/icons.woff2') format("woff"), url('http://localhost/icons.woff2') format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block
+}
+
+@font-face {
+    font-family: "tgico";
+    src: url('http://localhost/tgico.ttf') format("truetype"), url('http://localhost/tgico.woff') format("woff"), url('https://web.telegram.org/k/assets/fonts/tgico.svg?wijmvc#tgico') format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block
+}
+
+.tgico {
+    font-family: tgico !important;
+    speak: never;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon {
+    font-family: "icons" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-active-sessions::before {
+    content: ""
+}
+
+.icon-add-one-badge::before {
+    content: ""
+}
+
+.icon-add-user-filled::before {
+    content: ""
+}
+
+.icon-add-user::before {
+    content: ""
+}
+
+.icon-add::before {
+    content: ""
+}
+
+.icon-admin::before {
+    content: ""
+}
+
+.icon-allow-speak::before {
+    content: ""
+}
+
+.icon-animals::before {
+    content: ""
+}
+
+.icon-animations::before {
+    content: ""
+}
+
+.icon-archive-filled::before {
+    content: ""
+}
+
+.icon-archive-from-main::before {
+    content: ""
+}
+
+.icon-archive-to-main::before {
+    content: ""
+}
+
+.icon-archive::before {
+    content: ""
+}
+
+.icon-arrow-down-circle::before {
+    content: ""
+}
+
+.icon-arrow-down::before {
+    content: ""
+}
+
+.icon-arrow-left::before {
+    content: ""
+}
+
+.icon-arrow-right::before {
+    content: ""
+}
+
+.icon-ask-support::before {
+    content: ""
+}
+
+.icon-attach::before {
+    content: ""
+}
+
+.icon-avatar-archived-chats::before {
+    content: ""
+}
+
+.icon-avatar-deleted-account::before {
+    content: ""
+}
+
+.icon-avatar-saved-messages::before {
+    content: ""
+}
+
+.icon-bold::before {
+    content: ""
+}
+
+.icon-boost::before {
+    content: ""
+}
+
+.icon-boostcircle::before {
+    content: ""
+}
+
+.icon-bot-command::before {
+    content: ""
+}
+
+.icon-bot-commands-filled::before {
+    content: ""
+}
+
+.icon-bots::before {
+    content: ""
+}
+
+.icon-bug::before {
+    content: ""
+}
+
+.icon-calendar-filter::before {
+    content: ""
+}
+
+.icon-calendar::before {
+    content: ""
+}
+
+.icon-camera-add::before {
+    content: ""
+}
+
+.icon-camera::before {
+    content: ""
+}
+
+.icon-car::before {
+    content: ""
+}
+
+.icon-card::before {
+    content: ""
+}
+
+.icon-channel-filled::before {
+    content: ""
+}
+
+.icon-channel::before {
+    content: ""
+}
+
+.icon-channelviews::before {
+    content: ""
+}
+
+.icon-chat-badge::before {
+    content: ""
+}
+
+.icon-chats-badge::before {
+    content: ""
+}
+
+.icon-check::before {
+    content: ""
+}
+
+.icon-close-circle::before {
+    content: ""
+}
+
+.icon-close-topic::before {
+    content: ""
+}
+
+.icon-close::before {
+    content: ""
+}
+
+.icon-cloud-download::before {
+    content: ""
+}
+
+.icon-collapse::before {
+    content: ""
+}
+
+.icon-colorize::before {
+    content: ""
+}
+
+.icon-comments-sticker::before {
+    content: ""
+}
+
+.icon-comments::before {
+    content: ""
+}
+
+.icon-copy-media::before {
+    content: ""
+}
+
+.icon-copy::before {
+    content: ""
+}
+
+.icon-darkmode::before {
+    content: ""
+}
+
+.icon-data::before {
+    content: ""
+}
+
+.icon-delete-filled::before {
+    content: ""
+}
+
+.icon-delete-left::before {
+    content: ""
+}
+
+.icon-delete-user::before {
+    content: ""
+}
+
+.icon-delete::before {
+    content: ""
+}
+
+.icon-document::before {
+    content: ""
+}
+
+.icon-double-badge::before {
+    content: ""
+}
+
+.icon-down::before {
+    content: ""
+}
+
+.icon-download::before {
+    content: ""
+}
+
+.icon-eats::before {
+    content: ""
+}
+
+.icon-edit::before {
+    content: ""
+}
+
+.icon-email::before {
+    content: ""
+}
+
+.icon-enter::before {
+    content: ""
+}
+
+.icon-expand::before {
+    content: ""
+}
+
+.icon-eye-closed-outline::before {
+    content: ""
+}
+
+.icon-eye-closed::before {
+    content: ""
+}
+
+.icon-eye-outline::before {
+    content: ""
+}
+
+.icon-eye::before {
+    content: ""
+}
+
+.icon-favorite-filled::before {
+    content: ""
+}
+
+.icon-favorite::before {
+    content: ""
+}
+
+.icon-file-badge::before {
+    content: ""
+}
+
+.icon-flag::before {
+    content: ""
+}
+
+.icon-folder-badge::before {
+    content: ""
+}
+
+.icon-folder::before {
+    content: ""
+}
+
+.icon-fontsize::before {
+    content: ""
+}
+
+.icon-forums::before {
+    content: ""
+}
+
+.icon-forward::before {
+    content: ""
+}
+
+.icon-fullscreen::before {
+    content: ""
+}
+
+.icon-gifs::before {
+    content: ""
+}
+
+.icon-gift::before {
+    content: ""
+}
+
+.icon-group-filled::before {
+    content: ""
+}
+
+.icon-group::before {
+    content: ""
+}
+
+.icon-grouped-disable::before {
+    content: ""
+}
+
+.icon-grouped::before {
+    content: ""
+}
+
+.icon-hand-stop::before {
+    content: ""
+}
+
+.icon-hashtag::before {
+    content: ""
+}
+
+.icon-heart-outline::before {
+    content: ""
+}
+
+.icon-heart::before {
+    content: ""
+}
+
+.icon-help::before {
+    content: ""
+}
+
+.icon-info-filled::before {
+    content: ""
+}
+
+.icon-info::before {
+    content: ""
+}
+
+.icon-install::before {
+    content: ""
+}
+
+.icon-italic::before {
+    content: ""
+}
+
+.icon-key::before {
+    content: ""
+}
+
+.icon-keyboard::before {
+    content: ""
+}
+
+.icon-lamp::before {
+    content: ""
+}
+
+.icon-language::before {
+    content: ""
+}
+
+.icon-large-pause::before {
+    content: ""
+}
+
+.icon-large-play::before {
+    content: ""
+}
+
+.icon-link-badge::before {
+    content: ""
+}
+
+.icon-link-broken::before {
+    content: ""
+}
+
+.icon-link::before {
+    content: ""
+}
+
+.icon-location::before {
+    content: ""
+}
+
+.icon-lock-badge::before {
+    content: ""
+}
+
+.icon-lock::before {
+    content: ""
+}
+
+.icon-logout::before {
+    content: ""
+}
+
+.icon-loop::before {
+    content: ""
+}
+
+.icon-mention::before {
+    content: ""
+}
+
+.icon-message-failed::before {
+    content: ""
+}
+
+.icon-message-pending::before {
+    content: ""
+}
+
+.icon-message-read::before {
+    content: ""
+}
+
+.icon-message-succeeded::before {
+    content: ""
+}
+
+.icon-message::before {
+    content: ""
+}
+
+.icon-microphone-alt::before {
+    content: ""
+}
+
+.icon-microphone::before {
+    content: ""
+}
+
+.icon-monospace::before {
+    content: ""
+}
+
+.icon-more-circle::before {
+    content: ""
+}
+
+.icon-more::before {
+    content: ""
+}
+
+.icon-mute::before {
+    content: ""
+}
+
+.icon-muted::before {
+    content: ""
+}
+
+.icon-new-chat-filled::before {
+    content: ""
+}
+
+.icon-next::before {
+    content: ""
+}
+
+.icon-noise-suppression::before {
+    content: ""
+}
+
+.icon-non-contacts::before {
+    content: ""
+}
+
+.icon-open-in-new-tab::before {
+    content: ""
+}
+
+.icon-password-off::before {
+    content: ""
+}
+
+.icon-pause::before {
+    content: ""
+}
+
+.icon-permissions::before {
+    content: ""
+}
+
+.icon-phone-discard-outline::before {
+    content: ""
+}
+
+.icon-phone-discard::before {
+    content: ""
+}
+
+.icon-phone::before {
+    content: ""
+}
+
+.icon-photo::before {
+    content: ""
+}
+
+.icon-pin-badge::before {
+    content: ""
+}
+
+.icon-pin-list::before {
+    content: ""
+}
+
+.icon-pin::before {
+    content: ""
+}
+
+.icon-pinned-chat::before {
+    content: ""
+}
+
+.icon-pinned-message::before {
+    content: ""
+}
+
+.icon-pip::before {
+    content: ""
+}
+
+.icon-play-story::before {
+    content: ""
+}
+
+.icon-play::before {
+    content: ""
+}
+
+.icon-poll::before {
+    content: ""
+}
+
+.icon-premium::before {
+    content: ""
+}
+
+.icon-previous::before {
+    content: ""
+}
+
+.icon-privacy-policy::before {
+    content: ""
+}
+
+.icon-readchats::before {
+    content: ""
+}
+
+.icon-recent::before {
+    content: ""
+}
+
+.icon-reload::before {
+    content: ""
+}
+
+.icon-remove::before {
+    content: ""
+}
+
+.icon-reopen-topic::before {
+    content: ""
+}
+
+.icon-replace::before {
+    content: ""
+}
+
+.icon-replies::before {
+    content: ""
+}
+
+.icon-reply-filled::before {
+    content: ""
+}
+
+.icon-reply::before {
+    content: ""
+}
+
+.icon-revote::before {
+    content: ""
+}
+
+.icon-save-story::before {
+    content: ""
+}
+
+.icon-saved-messages::before {
+    content: ""
+}
+
+.icon-schedule::before {
+    content: ""
+}
+
+.icon-search::before {
+    content: ""
+}
+
+.icon-select::before {
+    content: ""
+}
+
+.icon-send-outline::before {
+    content: ""
+}
+
+.icon-send::before {
+    content: ""
+}
+
+.icon-settings-filled::before {
+    content: ""
+}
+
+.icon-settings::before {
+    content: ""
+}
+
+.icon-share-filled::before {
+    content: ""
+}
+
+.icon-share-screen-outlined::before {
+    content: ""
+}
+
+.icon-share-screen-stop::before {
+    content: ""
+}
+
+.icon-share-screen::before {
+    content: ""
+}
+
+.icon-sidebar::before {
+    content: ""
+}
+
+.icon-skip-next::before {
+    content: ""
+}
+
+.icon-skip-previous::before {
+    content: ""
+}
+
+.icon-smallscreen::before {
+    content: ""
+}
+
+.icon-smile::before {
+    content: ""
+}
+
+.icon-sort::before {
+    content: ""
+}
+
+.icon-speaker-muted-story::before {
+    content: ""
+}
+
+.icon-speaker-outline::before {
+    content: ""
+}
+
+.icon-speaker-story::before {
+    content: ""
+}
+
+.icon-speaker::before {
+    content: ""
+}
+
+.icon-spoiler-disable::before {
+    content: ""
+}
+
+.icon-spoiler::before {
+    content: ""
+}
+
+.icon-sport::before {
+    content: ""
+}
+
+.icon-stats::before {
+    content: ""
+}
+
+.icon-stealth-future::before {
+    content: ""
+}
+
+.icon-stealth-past::before {
+    content: ""
+}
+
+.icon-stickers::before {
+    content: ""
+}
+
+.icon-stop-raising-hand::before {
+    content: ""
+}
+
+.icon-stop::before {
+    content: ""
+}
+
+.icon-story-caption::before {
+    content: ""
+}
+
+.icon-story-expired::before {
+    content: ""
+}
+
+.icon-story-priority::before {
+    content: ""
+}
+
+.icon-story-reply::before {
+    content: ""
+}
+
+.icon-strikethrough::before {
+    content: ""
+}
+
+.icon-timer::before {
+    content: ""
+}
+
+.icon-transcribe::before {
+    content: ""
+}
+
+.icon-truck::before {
+    content: ""
+}
+
+.icon-unarchive::before {
+    content: ""
+}
+
+.icon-underlined::before {
+    content: ""
+}
+
+.icon-unlock-badge::before {
+    content: ""
+}
+
+.icon-unlock::before {
+    content: ""
+}
+
+.icon-unmute::before {
+    content: ""
+}
+
+.icon-unpin::before {
+    content: ""
+}
+
+.icon-unread::before {
+    content: ""
+}
+
+.icon-up::before {
+    content: ""
+}
+
+.icon-user-filled::before {
+    content: ""
+}
+
+.icon-user-online::before {
+    content: ""
+}
+
+.icon-user::before {
+    content: ""
+}
+
+.icon-video-outlined::before {
+    content: ""
+}
+
+.icon-video-stop::before {
+    content: ""
+}
+
+.icon-video::before {
+    content: ""
+}
+
+.icon-voice-chat::before {
+    content: ""
+}
+
+.icon-volume-1::before {
+    content: ""
+}
+
+.icon-volume-2::before {
+    content: ""
+}
+
+.icon-volume-3::before {
+    content: ""
+}
+
+.icon-web::before {
+    content: ""
+}
+
+.icon-webapp::before {
+    content: ""
+}
+
+.icon-word-wrap::before {
+    content: ""
+}
+
+.icon-zoom-in::before {
+    content: ""
+}
+
+.icon-zoom-out::before {
+    content: ""
+}

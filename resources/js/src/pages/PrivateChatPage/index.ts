@@ -1,0 +1,1 @@
+export { PrivateChatPage } from './ui'

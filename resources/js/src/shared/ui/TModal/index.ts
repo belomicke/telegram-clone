@@ -1,0 +1,1 @@
+export { TModal } from './ui'

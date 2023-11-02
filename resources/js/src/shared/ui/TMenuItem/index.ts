@@ -1,0 +1,1 @@
+export { TMenuItem } from './ui'
