@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 
 export const Container = styled.div`
     display: flex;
-    background: var(--color-background);
+    justify-content: space-between;
     z-index: 1;
     position: relative;
     max-width: 730px;
@@ -18,16 +18,23 @@ export const Container = styled.div`
     overflow: hidden;
 `
 
-export const Input = styled.input`
+export const Input = styled.input<{ focused: boolean }>`
     color: var(--color-text);
-    width: 100%;
-    background-color: transparent;
+    background-color: var(--color-background);
+    width: calc(100% - 56px);
     border: 0;
     outline: 0;
     font-size: 16px;
     padding: 17.5px 12px;
     padding-right: 0;
     line-height: 1.3125;
+    transition: border-bottom-right-radius .15s, border-top-right-radius .15s, width .15s;
+
+    ${props => props.focused && `
+        width: calc(100% - 66px);
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    `};
 `
 
 export const Placeholder = styled.span<{ text_length: number }>`
@@ -56,30 +63,27 @@ export const Placeholder = styled.span<{ text_length: number }>`
 };
 `
 
-export const SendButton = styled.button<{ text_length: number }>`
+export const SendButton = styled.button<{ text_length: number, focused: boolean }>`
     outline: none !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 56px;
+    width: 56px;
     border: 0;
-    background: var(--color-background);
+    background-color: var(--color-background);
     color: #fff;
     padding: 0;
     line-height: 1.2;
     cursor: pointer;
-    transition: background-color .15s, opacity 200ms ease-out, transform 200ms ease-out;
+    transition: background-color .15s, opacity 200ms ease-out, transform 200ms ease-out, border-radius .15s;
 
-    ${props => props.text_length ? `
-        opacity: 1;
-        transform: translateX(0);
-    ` : `
-        opacity: 0;
-        transform: translateX(-1rem);
+    ${props => props.focused && `
+        border-radius: 50%;
     `};
 
     &:hover {
+        background-color: var(--color-primary);
         color: #fff;
 
         & > i {
@@ -92,4 +96,9 @@ export const SendButton = styled.button<{ text_length: number }>`
         color: var(--color-primary);
         transition: color .15s;
     }
+`
+
+export const SendButtonIcon = styled.i<{ focused: boolean }>`
+    opacity: ${props => props.focused ? '1' : '0'};
+    transition: color .15s, opacity .15s !important;
 `
