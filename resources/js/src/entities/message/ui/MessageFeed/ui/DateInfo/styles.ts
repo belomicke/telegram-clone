@@ -21,5 +21,6 @@ export const DateText = styled.span<{ theme: 'light' | 'dark' }>`
     border-radius: var(--border-radius-messages);
     word-break: break-word;
     position: relative;
+    text-transform: capitalize;
     z-index: 0;
 `

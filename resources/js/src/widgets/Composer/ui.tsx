@@ -1,5 +1,5 @@
 import { InputHTMLAttributes, useEffect } from 'react'
-import { Container, Input, Placeholder, SendButton, Wrapper } from './styles'
+import { Container, Input, Placeholder, SendButton, SendButtonIcon, Wrapper } from './styles'
 
 interface props extends InputHTMLAttributes<HTMLInputElement>{
     onEnter: () => void
@@ -23,13 +23,20 @@ export const Composer = ({ onEnter, ...props }: props) => {
     return (
         <Wrapper>
             <Container>
-                <Input {...props} />
+                <Input
+                    {...props}
+                    focused={String(props.value).length !== 0}
+                />
                 <Placeholder text_length={String(props.value).length}>Сообщение</Placeholder>
                 <SendButton
+                    focused={String(props.value).length !== 0}
                     text_length={String(props.value).length}
                     onMouseDown={() => onEnter()}
                 >
-                    <i className="icon icon-send" />
+                    <SendButtonIcon
+                        focused={String(props.value).length !== 0}
+                        className="icon icon-send"
+                    />
                 </SendButton>
             </Container>
         </Wrapper>
