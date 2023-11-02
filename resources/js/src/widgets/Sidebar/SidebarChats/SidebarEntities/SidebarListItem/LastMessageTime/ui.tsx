@@ -45,14 +45,14 @@ export const LastMessageTime = ({ messageDate, active }: props) => {
 
         if (n.year() !== d.year()) {
             return `${d.year()}-${messageMonth}-${getNumberWithZero(d.date())}`
+        } else if (d.dayOfYear() === n.dayOfYear()) {
+            return `${getNumberWithZero(d.hour())}:${minutes}`
         } else if (d.week() === n.week()) {
             return Intl.DateTimeFormat('ru', {
                 weekday: 'short',
             }).format(new Date(d.toISOString()))
         } else if (n.month() !== messageMonth) {
             return `${getNumberWithZero(d.date())} ${getMonthName(messageMonth)}`
-        } else if (d.dayOfYear() === n.dayOfYear()) {
-            return `${getNumberWithZero(d.hour())}:${minutes}`
         } else {
             return `${getNumberWithZero(d.date())} ${getMonthName(messageMonth)}`
         }
