@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import moment, { Moment } from 'moment'
+import moment from 'moment'
 import { LastMessage, LastMessageContainer } from './styles'
 
 interface props {
@@ -27,20 +27,6 @@ export const LastMessageTime = ({ messageDate, active }: props) => {
         return months[number]
     }
 
-    const getWeekDayName = (number: number) => {
-        const weekdays = {
-            1: 'пн',
-            2: 'вт',
-            3: 'ср',
-            4: 'чт',
-            5: 'пт',
-            6: 'сб',
-            7: 'вс',
-        }
-
-        return weekdays[number]
-    }
-
     const getNumberWithZero = (number: number) => {
         if (number < 10) {
             return `0${number}`
@@ -59,12 +45,14 @@ export const LastMessageTime = ({ messageDate, active }: props) => {
 
         if (n.year() !== d.year()) {
             return `${d.year()}-${messageMonth}-${getNumberWithZero(d.date())}`
+        } else if (d.week() === n.week()) {
+            return Intl.DateTimeFormat('ru', {
+                weekday: 'short',
+            }).format(new Date(d.toISOString()))
         } else if (n.month() !== messageMonth) {
             return `${getNumberWithZero(d.date())} ${getMonthName(messageMonth)}`
         } else if (d.dayOfYear() === n.dayOfYear()) {
             return `${getNumberWithZero(d.hour())}:${minutes}`
-        } else if (d.week() === n.week()) {
-            return getWeekDayName(d.weekday())
         } else {
             return `${getNumberWithZero(d.date())} ${getMonthName(messageMonth)}`
         }
