@@ -1,6 +1,8 @@
 import { forwardRef } from 'react'
 import { useAppStore } from '@/entities/app'
 import { DateContainer, DateText } from './styles'
+import moment, { Moment } from 'moment'
+import 'moment/dist/locale/ru.js'
 
 interface props {
     date: string
@@ -9,19 +11,37 @@ interface props {
 export const DateInfo = forwardRef<HTMLDivElement, props>(({ date, ...props }: props) => {
     const theme = useAppStore((state) => state.theme)
 
+    const isToday = (x: Moment, y: Moment) => {
+        return x.year() === y.year()
+            && x.month() === y.month()
+            && x.date() === y.date()
+    }
+
+    const isYesterday = (x: Moment, y: Moment) => {
+        return x.year() === y.year()
+            && x.month() === y.month()
+            && x.date() - y.date() === 1
+    }
+
+    const onThisWeek = (x: Moment, y: Moment) => {
+        return x.year() === y.year() && x.week() === y.week()
+    }
+
     const parseDate = (date: string) => {
-        const now = new Date()
-        const d = new Date(date)
+        const now = moment(new Date())
+        const d = moment(date)
 
         try {
-            if (now.getFullYear() === d.getFullYear() && now.getMonth() === d.getMonth() && now.getDate() === d.getDate()) {
+            if (isToday(now, d)) {
                 return 'Сегодня'
-            } else {
+            } else if (isYesterday(now, d)) {
+                return 'Вчера'
+            } else if (onThisWeek(now, d)) {
                 return Intl.DateTimeFormat('ru', {
-                    day: 'numeric',
-                    month: 'long',
-                    year: 'numeric'
-                }).format(d)
+                    weekday: 'long',
+                }).format(new Date(date))
+            } else {
+                return d.format('DD MMMM YYYYг.')
             }
         } catch (e) {
             return ''
