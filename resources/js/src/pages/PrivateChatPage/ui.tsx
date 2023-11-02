@@ -1,7 +1,6 @@
-import { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useParams } from 'react-router'
 import { Composer } from '@/widgets/Composer'
-import { PrivateChatMessages } from '@/widgets/PrivateChatMessages'
 import { usePrivateChat } from '@/entities/chat/hook/usePrivateChat'
 import { useSendMessageToPrivateChat } from '@/entities/chat/hook/useSendMessageToPrivateChat'
 import { getPrivateChannelPath } from '@/entities/chat/helpers/getPrivateChannelPath'
@@ -9,6 +8,8 @@ import { useViewer } from '@/entities/viewer'
 import { ChatHeader } from '@/shared/ui/ChatHeader'
 import { PrivateChat } from '@/widgets/PrivateChatMessages/ui'
 import { Container } from './styles'
+import { MessageFeed } from '@/entities/message/ui/MessageFeed'
+import { usePrivateChatMessages } from '@/entities/chat/hook/usePrivateChatMessages'
 
 export const PrivateChatPage = () => {
     const params = useParams()
@@ -23,6 +24,11 @@ export const PrivateChatPage = () => {
     const { channel } = getPrivateChannelPath(Number(id))
 
     const chatRef = useRef<PrivateChat>(null)
+
+    const {
+        data: messages,
+        fetch,
+    } = usePrivateChatMessages(Number(id))
 
     useEffect(() => {
         if (chat) {
@@ -54,8 +60,9 @@ export const PrivateChatPage = () => {
                 title={chat.title}
                 cover={chat.cover}
             />
-            <PrivateChatMessages
-                id={Number(id)}
+            <MessageFeed
+                messages={messages}
+                fetch={fetch}
                 ref={chatRef}
             />
             <Composer
